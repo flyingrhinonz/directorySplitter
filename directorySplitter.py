@@ -50,7 +50,7 @@ import traceback
 
 # This block handles logging to syslog:
 LogWrite = logging.getLogger('MyLogger')
-LogWrite.setLevel(logging.DEBUG)
+LogWrite.setLevel(logging.WARNING)
     # ^ Set this to logging.DEBUG or logging.WARNING for your INITIAL desired log level.
     #   Config file log level takes over from when it is loaded, this value controls
     #   logging verbosity until then.
