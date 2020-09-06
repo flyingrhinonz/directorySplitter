@@ -137,6 +137,10 @@ def CopyFiles():
             ZfillLength = 6
         elif (TargetDirCount < 10000000):
             ZfillLength = 7
+        elif (TargetDirCount < 100000000):
+            ZfillLength = 8
+        elif (TargetDirCount < 1000000000):
+            ZfillLength = 9
 
         LogWrite.debug('SourceDir={} has {} files. Splitting to {} files per dir. '
             'Number of target dirs required: {}. ZfillLength={}'
@@ -164,7 +168,7 @@ def ParseArgs():
 
     parser = argparse.ArgumentParser(
         description='Directory splitter. '
-            'This program splits directories into multiple directories with'
+            'This program splits directories into multiple directories with '
             'the specified number of files within each directory.',
         epilog='Thank you for using FlyingRhino software.')
     LogWrite.debug('parser object = "{}"'.format(parser))
