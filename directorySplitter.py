@@ -17,7 +17,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 See the GNU General Public License for more details.
 
 Installing:
-Download the script and give it execute permissions.
+Download the script from:  https://github.com/flyingrhinonz/directorySplitter  and give it execute permissions.
 
 Use './directorySplitter.py -h' for help
 
